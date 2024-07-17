@@ -2,9 +2,10 @@ import os
 from math import sqrt
 
 import pandas as pd
-from Rec.base_models.MetricsEvaluation import RecEval
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
+
+from base_models.MetricsEvaluation import RecEval
 
 
 def load_data(path):

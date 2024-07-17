@@ -3,13 +3,14 @@ import os
 import faiss
 import numpy as np
 import pandas as pd
-from Rec.base_models.MetricsEvaluation import RecEval
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.backend import clear_session
 from tensorflow.keras.callbacks import *
 from tensorflow.keras.layers import *
 from tensorflow.keras.models import *
+
+from base_models.MetricsEvaluation import RecEval
 
 
 def load_data(path):
